@@ -25,6 +25,7 @@ public class StaffDeviceControl {
 				}
 			}
 
+
 			hasID = dbc.searchID(id);
 
 			if(hasID = false)sdg.displayRegistrationError();
