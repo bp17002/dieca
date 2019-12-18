@@ -6,6 +6,7 @@ import パッケージ0.Database.Ancate;
 public class CreationAncateGUI {
 
 	public String inputSummary() {
+		System.out.println("hello world");
 		return null;
 	}
 
