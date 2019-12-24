@@ -5,7 +5,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 class GetReadID {
-  public void/* byte[] */ getReadID() {
+  public String/*byte[] */ getReadID() {
+    String id = "";
 
     String line;
     String exefilename = ".\\PCSCReader\\Release\\PCSCReader.exe";
@@ -16,7 +17,6 @@ class GetReadID {
       BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
       int index;
-      String id = "";
 
       while ((line = br.readLine()) != null) {
         // System.out.println("line: " + line);
@@ -30,5 +30,6 @@ class GetReadID {
 
     } catch (Exception e) {
     }
+    return id;
   }
 }
