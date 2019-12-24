@@ -1,7 +1,10 @@
-package パッケージ0;
+package dieca;
 
-public interface ICCardReader {
+import dieca.*;
 
-	public String readID();
-
+public class ICCardReader {
+	public String getId(){
+		GetReadId gr = new GetReadID();
+		return gr.getReadID().toString();
+	}
 }
